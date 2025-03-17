@@ -1,0 +1,126 @@
+/* reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* nav styles */
+header {
+    display: flex;
+    justify-content: space-between; /* Asegura que el logo y la nav estén separados */
+    align-items: center;
+    padding: 10px 30px; /* Ajusta el espaciado sin necesidad de margin-right en ul */
+}
+
+.logo {
+    font-size: 1.5em;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 100px; /* Ajuste más razonable */
+    margin-right: 30px;
+}
+
+/* Banner styles */
+#banner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
+}
+
+#banner h1 {
+    font-size: 4rem; /* Tamaño grande para el h1 */
+    font-weight: bold;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Ajusta el espacio entre los elementos */
+}
+
+#banner button {
+    margin-top: 20px;
+    padding: 5px;;
+}
+
+/* About Me styles */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* About Me styles */
+.about-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.slider-container {
+    width: 400px; /* Ajusta según necesidad */
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider p {
+    min-width: 100%;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    text-align: center;
+}

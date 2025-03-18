@@ -60,19 +60,34 @@ nav ul {
 }
 
 /* About Me styles */
+
 #about {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Apila los elementos en columna */
     align-items: center;
-    justify-content: space-between;
+    text-align: center;
     padding: 50px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.about-text {
+/* Mantiene el texto y la imagen en la misma línea */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about-text, .about-image {
     flex: 1;
+}
+
+.about-text {
     padding-right: 30px;
+    text-align: left;
 }
 
 .about-text h2 {
@@ -86,7 +101,6 @@ nav ul {
 }
 
 .about-image {
-    flex: 1;
     display: flex;
     justify-content: center;
 }
@@ -97,30 +111,39 @@ nav ul {
     border-radius: 10px;
 }
 
-/* About Me styles */
+/* Slider */
+
+
 .about-slider {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+    width: 100%;
 }
 
 .slider-container {
-    width: 400px; /* Ajusta según necesidad */
+    width: 100%;
+    
     overflow: hidden;
+    position: relative;
 }
 
 .slider {
     display: flex;
-    gap: 20px;
-    transition: transform 0.3s ease-in-out;
+    flex-direction: row;
+    gap: 30px;
+    transition: transform 1s ease-in-out;
+    will-change: transform;
 }
 
 .slider p {
-    min-width: 100%;
-    padding: 10px;
-    background: #f4f4f4;
-    border-radius: 5px;
+    min-width: 50%;
     text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+   
 }

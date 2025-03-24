@@ -147,3 +147,65 @@ nav ul {
     border-radius: 8px;
    
 }
+
+/* Skills*/
+
+#skills {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+.skills-container {
+    display: flex; /* Coloca los divs en línea */
+    width: 100%; /* Ocupa todo el ancho */
+    gap: 30px;
+}
+
+.frontend-skills {
+   flex: 1;
+   background-color: #f0f0f0;
+   border-radius: 8px;
+   padding: 15px;
+}
+.design-skills {
+   flex: 1;
+   background-color: #f0f0f0;
+   border-radius: 8px;
+   padding: 15px;
+}
+
+.frontend-skills h3,
+.design-skills h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.frontend-skills p,
+.design-skills p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.personal-skills {
+    margin-top: 30px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.personal-skills h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.personal-skills p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+  
+  

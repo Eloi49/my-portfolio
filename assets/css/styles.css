@@ -156,6 +156,11 @@ nav ul {
     padding: 50px;
 }
 
+#skills h2{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
 
 .skills-container {
     display: flex; /* Coloca los divs en línea */
@@ -207,5 +212,74 @@ nav ul {
     margin-bottom: 10px;
 }
 
+
+ /* Projects */
+#projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+#projects h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 30px;
+}
+
+ .project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+} 
+
+.project-card:hover {
+    transform: scale(1.05);
+  }
   
-  
+
+.project-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+    pointer-events: none; /* ← Esto evita interferencias */
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+.project-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.project-card p {
+    font-size: 1rem;
+    z-index: 1;
+}
+
+.project-card:nth-child(1) { background-color: #e0f2ff; }
+.project-card:nth-child(2) { background-color: #b3e5fc; }
+.project-card:nth-child(3) { background-color: #81d4fa; }
+.project-card:nth-child(4) { background-color: #4fc3f7; }

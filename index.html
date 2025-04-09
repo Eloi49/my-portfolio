@@ -10,7 +10,15 @@
 <body>
     <header>
         <div class="logo">Eloi Frias</div>
-        <nav>
+        
+        <button class="nav-menu" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+
+        <nav class="nav-links">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -119,11 +127,33 @@
             </div>
           </section>
           
+          <section id="contact">
+            <div class="contact-container">
+              <div class="contact-left">
+                <h3>Find me on</h3>
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a></li>
+                  <li><a href="https://github.com/tu-usuario" target="_blank">GitHub</a></li>
+                  <li><a href="cv.pdf" target="_blank">Curriculum Vitae</a></li>
+                </ul>
+              </div>
+              
+              <div class="contact-right">
+                <h3>Contact Me</h3>
+                <div class="email-line">
+                  <span id="email">eloifp49@gmail.com</span>
+                  <button onclick="copyEmail()">Copy</button>
+                  <button onclick="window.location.href='mailto:eloifp49@gmail.com'">Send</button>
+                </div>
+                <span id="copy-msg"></span>
+              </div>
+              
+              
+              
+            </div>
+          </section>
+          
         
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>How to get in touch with me...</p>
-        </section>
     </main>
 </body>
 </html>

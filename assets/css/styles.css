@@ -17,6 +17,12 @@ header {
     justify-content: space-between; /* Asegura que el logo y la nav estén separados */
     align-items: center;
     padding: 10px 30px; /* Ajusta el espaciado sin necesidad de margin-right en ul */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
 }
 
 .logo {
@@ -31,6 +37,58 @@ nav ul {
     margin-right: 30px;
 }
 
+main {
+    margin-top: 100px; /* Ajusta según la altura del header */
+  }
+  
+/* --- Responsive Navbar --- */
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .nav-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 768px) {
+    
+    nav ul {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 30px;
+      background-color: white;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: none;
+    }
+  
+    nav ul.active {
+      display: flex;
+    }
+  
+    .nav-menu {
+      display: flex;
+      position: absolute;
+      top: 15px;
+      right: 30px;
+    }
+  }
+  
 /* Banner styles */
 #banner {
     display: flex;
@@ -283,3 +341,59 @@ nav ul {
 .project-card:nth-child(2) { background-color: #b3e5fc; }
 .project-card:nth-child(3) { background-color: #81d4fa; }
 .project-card:nth-child(4) { background-color: #4fc3f7; }
+
+
+   /* Contact Section */
+#contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    
+  }
+  
+  .contact-left,
+  .contact-right {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .contact-left h3,
+  .contact-right h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-left ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-left li {
+    margin-bottom: 10px;
+  }
+  
+  .email-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .email-line span {
+    font-size: 1.1rem;
+  }
+  
+  .email-line button {
+    padding: 6px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  

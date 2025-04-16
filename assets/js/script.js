@@ -1,3 +1,5 @@
+
+
 // nav bar menu 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -22,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
-  
+
 //Slider "about-me"
 
 document.addEventListener("DOMContentLoaded", function () {

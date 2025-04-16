@@ -9,8 +9,9 @@
 </head>
 <body>
     <header>
-        <div class="logo">Eloi Frias</div>
-        
+      <a href="#banner" class="logo">Eloi Frias</a>
+
+
         <button class="nav-menu" aria-label="Open menu">
           <span></span>
           <span></span>
@@ -33,7 +34,10 @@
             <div class="banner-content">
                 <h1>Eloi Frias Pàmies</h1>
                 <p>Looking for my first opportunity as a Web Developer. Every career has a first step – let’s take it together!</p>
-                <button>Avaiable for work</button>
+                <button onclick="window.location.href='mailto:eloifp49@gmail.com'">
+                  Available for work
+                </button>
+                
             </div>
         </section>
 
@@ -132,18 +136,37 @@
               <div class="contact-left">
                 <h3>Find me on</h3>
                 <ul>
-                  <li><a href="https://www.linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a></li>
-                  <li><a href="https://github.com/tu-usuario" target="_blank">GitHub</a></li>
-                  <li><a href="cv.pdf" target="_blank">Curriculum Vitae</a></li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">
+                      <img src="assets/icons/linkedin.svg" alt="LinkedIn"> LinkedIn
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/tu-usuario" target="_blank">
+                      <img src="assets/icons/github.svg" alt="GitHub"> GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a href="cv.pdf" target="_blank">
+                      <img src="assets/icons/cv.svg" alt="CV"> CV
+                    </a>
+                  </li>
                 </ul>
+                
               </div>
               
               <div class="contact-right">
-                <h3>Contact Me</h3>
+                <img src="assets/icons/email.svg" alt="email">
                 <div class="email-line">
                   <span id="email">eloifp49@gmail.com</span>
-                  <button onclick="copyEmail()">Copy</button>
-                  <button onclick="window.location.href='mailto:eloifp49@gmail.com'">Send</button>
+                  
+                  <button onclick="copyEmail()">
+                    <img src="assets/icons/copy.svg" alt="Copy" class="icon-btn">
+                  </button>
+                  
+                  <button onclick="window.location.href='mailto:eloifp49@gmail.com'">
+                    <img src="assets/icons/send.svg" alt="Send" class="icon-btn">
+                  </button>
                 </div>
                 <span id="copy-msg"></span>
               </div>
